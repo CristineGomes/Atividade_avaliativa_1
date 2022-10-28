@@ -19,10 +19,10 @@ maior_sequencia_b = 0
 #     entrada = int(input("Numero: "))        
 for n in range(0, 150):
     entrada = randint(0, 10)
-    print(entrada)
+    # print(entrada)
 
     if ultimo_numero and ultimo_numero == entrada - 1:
-        print('Contabilizou a')             
+        # print('Contabilizou a')             
         soma_a += entrada
         contador_a += 1
         contador_b = 1
@@ -32,7 +32,7 @@ for n in range(0, 150):
             maior_sequencia_a = contador_a
 
     elif ultimo_numero and ultimo_numero == entrada:
-        print('Contabilizou b')
+        # print('Contabilizou b')
         contador_a = 1
         soma_a = entrada
         contador_b += 1
@@ -46,7 +46,7 @@ for n in range(0, 150):
         contador_a = 1
         soma_a = entrada
         contador_b = 1
-        print('Não contabilizou')
+        # print('Não contabilizou')
         
 
     ultimo_numero = entrada
